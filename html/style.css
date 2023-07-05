@@ -28,7 +28,10 @@ body {
 
 .nav-link, .nav-link:hover, .nav-link:active {
   color: #3B7890 !important;
-  font-weight: 600;
+}
+
+.nav-link {
+	font-weight: 600;
 }
 
 .divider {
