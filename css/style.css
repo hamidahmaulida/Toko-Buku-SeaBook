@@ -1,0 +1,71 @@
+/*Universal*/
+@font-face {
+  font-family: "Montserrat";
+  src: url('assets/font/static/Montserrat-SemiBold.ttf') format('truetype'); 
+}
+
+body {
+  font-family: Montserrat;
+}
+
+/*Navbar*/
+.input-group input, .input-group button {
+  border-radius: 25px;
+}
+
+.bag-logo {
+  margin-top: -2px;
+  display: none;
+}
+
+.bag-link {
+	display: block;
+}
+
+.navbar-brand img {
+  width: 140px;
+}
+
+.nav-link, .nav-link:hover, .nav-link:active {
+  color: #3B7890 !important;
+  font-weight: 600;
+}
+
+.divider {
+	display: block;
+}
+
+ul.overflow-x-hidden {
+	height: 200px;
+}
+
+/*Footer*/
+footer {
+	background-color: #e3f2fd;
+}
+
+footer p {
+	color: #256681;
+}
+
+/*Khusus Desktop*/
+@media (min-width: 991px) {
+
+	/*Navbar*/
+	.input-group {
+		width: 450px;
+	}
+
+	.divider {
+		display: none;
+	}
+
+	.bag-logo {
+		display: block;
+	}
+
+	.bag-link {
+		display: none;
+	}
+
+}
