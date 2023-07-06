@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse pt-4 pt-lg-0" id="navbarNav">
           <ul class="navbar-nav container-fluid justify-content-end">
             <li class="nav-item me-lg-5">
-              <a class="nav-link" href="#">Konfirmasi</a>
+              <a class="nav-link" href="../adminpanel/confirmation.php">Konfirmasi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Keluar</a>

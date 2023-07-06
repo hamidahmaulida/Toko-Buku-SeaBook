@@ -1,7 +1,7 @@
 /*Universal*/
 @font-face {
   font-family: "Montserrat";
-  src: url('assets/font/static/Montserrat-SemiBold.ttf') format('truetype'); 
+  src: url('../assets/font/static/Montserrat-Regular.ttf') format('truetype'); 
 }
 
 body {
@@ -62,7 +62,7 @@ footer p {
 /*Admin Panel*/
 .page-title h1 {
    color: #237699;
-   font-weight: 550;
+   font-weight: 700;
 }
 
 .show-table thead th {

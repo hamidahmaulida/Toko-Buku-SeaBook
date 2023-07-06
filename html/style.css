@@ -1,7 +1,7 @@
 /*Universal*/
 @font-face {
   font-family: "Montserrat";
-  src: url('assets/font/static/Montserrat-SemiBold.ttf') format('truetype'); 
+  src: url('../assets/font/static/Montserrat-Regular.ttf') format('truetype'); 
 }
 
 body {
