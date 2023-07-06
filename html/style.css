@@ -13,15 +13,6 @@ body {
   border-radius: 25px;
 }
 
-.bag-logo {
-  margin-top: -2px;
-  display: none;
-}
-
-.bag-link {
-	display: block;
-}
-
 .navbar-brand img {
   width: 140px;
 }
@@ -64,11 +55,6 @@ footer p {
 	}
 
 	.bag-logo {
-		display: block;
+	  margin-top: 6px;
 	}
-
-	.bag-link {
-		display: none;
-	}
-
 }
