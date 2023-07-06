@@ -58,3 +58,13 @@ footer p {
 	  margin-top: 6px;
 	}
 }
+
+/*Admin Panel*/
+.page-title h1 {
+   color: #237699;
+   font-weight: 550;
+}
+
+.show-table thead th {
+  background-color:#86B7FE;
+}
