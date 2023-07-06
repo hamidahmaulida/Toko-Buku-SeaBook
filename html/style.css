@@ -1,11 +1,6 @@
 /*Universal*/
-@font-face {
-  font-family: "Montserrat";
-  src: url('../assets/font/static/Montserrat-Regular.ttf') format('truetype'); 
-}
-
 body {
-  font-family: Montserrat;
+  font-family: 'Montserrat', arial, sans-serif;
 }
 
 /*Navbar*/
