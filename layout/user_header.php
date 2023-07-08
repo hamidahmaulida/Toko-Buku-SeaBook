@@ -25,12 +25,10 @@
                 Kategori
               </a>
               <ul class="dropdown-menu overflow-x-hidden">
-                <li><a class="dropdown-item" href="#">Alam</a></li>
                 <li><a class="dropdown-item" href="#">Arsitektur</a></li>
                 <li><a class="dropdown-item" href="#">Berkebun</a></li>
                 <li><a class="dropdown-item" href="#">Bisnis & Ekonomi</a></li>
                 <li><a class="dropdown-item" href="#">Fiksi</a></li>
-                <li><a class="dropdown-item" href="#">Game</a></li>
                 <li><a class="dropdown-item" href="#">Humor</a></li>
                 <li><a class="dropdown-item" href="#">Komputer</a></li>
                 <li><a class="dropdown-item" href="#">Matematika</a></li>

@@ -52,14 +52,28 @@ footer p {
 	.bag-logo {
 	  margin-top: 6px;
 	}
+
+	.shift-main {
+		margin-left: 300px;
+		width: 1000px;
+	}
 }
 
 /*Admin Panel*/
-.page-title h1 {
-   color: #237699;
-   font-weight: 700;
+.shift-main thead th {
+  text-align: center;
 }
 
-.show-table thead th {
-  background-color:#86B7FE;
+.shift-main th, .shift-main td {
+	font-size: 12px;
+}
+
+/*sidebar*/
+.sidebar .nav-item:hover {
+	background-color: #ededed;
+}
+
+.sidebar {
+	box-shadow: .125rem 0 .25rem rgba(0, 0, 0, .075);
+	bottom: 0;
 }

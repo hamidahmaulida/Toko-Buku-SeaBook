@@ -13,7 +13,7 @@
     include "../layout/simple_header.php";
     ?>
     <br>
-    <div class="container mt-5 page-title">
+    <div class="container mt-5">
         <?php // Koneksi ke database
         include "../lib/connection.php";
         // Mendapatkan data buku berdasarkan id_buku
@@ -25,8 +25,8 @@
             $data = mysqli_fetch_assoc($result);
         }
         ?>
-        <h1 class="mt-4 mb-4">Edit Buku - ID: <?php echo $id_buku; ?></h1>
-        <form method="POST" action="edit_action.php" enctype="multipart/form-data">
+        <h1 class="mt-4 mb-4 text-info-emphasis">Edit Buku - ID: <?php echo $id_buku; ?></h1>
+        <form method="POST" action="edit_action.php" enctype="multipart/form-data" class="mb-3">
             <input type="hidden" name="id_buku" value="<?php echo $id_buku; ?>">
             <div class="mb-3">
                 <label for="judul_buku" class="form-label">Judul Buku</label>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="penulis" class="form-label">Pengarang</label>
+                <label for="penulis" class="form-label">Penulis</label>
                 <input type="text" class="form-control" id="penulis" name="penulis" required value="<?php echo $data['penulis']; ?>">
             </div>
             <div class="mb-3">
@@ -63,19 +63,25 @@
             </div>
 
             <div class="mb-3">
+                <label for="stok_buku" class="form-label">Stok</label>
+                <input type="number" class="form-control" id="stok_buku" name="stok_buku" required value="<?php echo $data['stok_buku']; ?>">
+            </div>
+
+            <div class="mb-3">
             <label for="deskripsi" class="form-label">deskripsi</label>
-            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3" required><?php echo $data['deskripsi']; ?></textarea>
+            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3"><?php echo $data['deskripsi']; ?></textarea>
             </div>
             
             <div class="mb-3">
                 <label for="gambar" class="form-label">Gambar</label>
-                <input type="file" class="form-control" id="gambar" name="gambar" required value="<?php echo $data['gambar']; ?>">
+                <input type="file" class="form-control" id="gambar" name="gambar" value="<?php echo $data['gambar']; ?>">
             </div>
             
 
             <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
             <a href="show_data.php" class="btn btn-secondary">Kembali</a>
         </form>
+        <br>
     </div>
 </body>
 </html>

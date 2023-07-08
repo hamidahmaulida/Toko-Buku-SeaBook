@@ -28,14 +28,6 @@ ul.overflow-x-hidden {
 	height: 200px;
 }
 
-/*Footer*/
-footer {
-	background-color: #e3f2fd;
-}
-
-footer p {
-	color: #256681;
-}
 
 /*Khusus Desktop*/
 @media (min-width: 991px) {
@@ -52,4 +44,5 @@ footer p {
 	.bag-logo {
 	  margin-top: 6px;
 	}
+
 }

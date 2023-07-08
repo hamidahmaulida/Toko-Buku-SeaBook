@@ -12,6 +12,7 @@ $kategori = $_POST['kategori'];
 $bahasa = $_POST['bahasa'];
 $harga = $_POST['harga'];
 $deskripsi = $_POST['deskripsi'];
+$stok_buku = $_POST['stok_buku'];
 
 // Update data buku
 $sql = "UPDATE buku SET
@@ -22,6 +23,7 @@ $sql = "UPDATE buku SET
         kategori = '$kategori',
         bahasa = '$bahasa',
         harga = '$harga',
+        stok_buku = '$stok_buku',
         deskripsi = '$deskripsi'
         WHERE id_buku = '$id_buku'";
 
@@ -85,6 +87,8 @@ if (mysqli_query($link, $sql)) {
     }
 
     // Redirect to the main page
+    session_start();
+    $_SESSION['alert'] = 'berhasil';
     header("Location: show_data.php");
     exit();
 } else {
