@@ -27,10 +27,11 @@
             $_SESSION['alert'] = 'berhasil';
             header("location:form_add.php");
         } else {
-            header("location:save_action.php");
+            echo "Gagal Menambahkan";
         }
     } else {
         echo "Gagal Menambahkan";
     }
+mysqli_close($link);
 ?>
     

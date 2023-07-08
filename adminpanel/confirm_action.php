@@ -35,5 +35,5 @@ if (isset($_GET['status'])) {
 } else {
 	echo "Invalid STATUS parameter";
 }
-
+mysqli_close($link);
 ?>
