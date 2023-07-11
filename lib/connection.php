@@ -1,4 +1,4 @@
 <?php
 $link = mysqli_connect("localhost", "root", "");
-mysqli_select_db($link, "si buku");
+mysqli_select_db($link, "si_buku");
 ?>

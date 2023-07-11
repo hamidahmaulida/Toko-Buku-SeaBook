@@ -31,15 +31,35 @@ session_start();
             include 'lib/connection.php';
             $sql = "SELECT * FROM buku LIMIT 6";
             $result = mysqli_query($link, $sql)?>
-            <?php while ($perproduk= mysqli_fetch_assoc($result)){ ?>
+            <?php while ($perproduk = mysqli_fetch_assoc($result)) { ?>
             <div class="col-md-2 g-6">
                 <div class="thumbnail">
-                    <img src="assets/img/buku/<?php echo $perproduk['gambar'];?>"<?php echo $data['gambar']; ?> alt="" width="120px" height="180px">
-                    <div class="caption">
-                        <h6><?php echo $perproduk['judul_buku'];?></h6>
-                        <h6>Rp. <?php echo $perproduk['harga']; ?></h6>
-                        <a class="btn btn-primary" href="">Beli</a>
-                    </div>
+                <?php
+                $imagePath = $perproduk['gambar'];
+
+                $imagePath = substr($imagePath, strpos($imagePath, '/') + 1);
+
+                if (is_file($imagePath)) {
+                    $mimeType = mime_content_type($imagePath);
+
+                    $imageData = file_get_contents($imagePath);
+
+                    $base64Image = base64_encode($imageData);
+
+                    $dataUri = 'data:' . $mimeType . ';base64,' . $base64Image;
+
+                    echo '<img src="' . $dataUri . '" alt="" width="120px" height="180px">';
+                } else {
+                    // Display a placeholder image or a default image
+                    echo '<img src="path/to/placeholder-image.jpg" alt="Image Not Available" width="120px" height="180px">';
+                }
+                ?>
+
+                <div class="caption">
+                    <h6><?php echo $perproduk['judul_buku']; ?></h6>
+                    <h6>Rp. <?php echo $perproduk['harga']; ?></h6>
+                    <a class="btn btn-primary" href="">Beli</a>
+                </div>
                 </div>
             </div>
             <?php } ?>
